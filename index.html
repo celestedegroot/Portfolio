@@ -4,35 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Celeste - Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="page-container">
         <div class="nav-bar">
-            <a href="/#">Home</a>
-            <a href="/#projects">Projects</a>
-            <a href="/#about">About Me</a>
-            <a href="/#contact">Contact</a>
+            <img src="/images/portrait.png" alt="">
+
+            <a href="/#home"><i class="material-symbols-rounded">home</i>home</a>
+            <a href="/#projects"><i class="material-symbols-rounded">folder</i>projects</a>
+            <a href="/#about"><i class="material-symbols-rounded">person</i>about me</a>
+            <a href="/#contact"><i class="material-symbols-rounded">mail</i>contact</a>
+
+            <div class="nav-bar-bottom">
+                <button type="button" onclick="window.open('https://github.com/celestedegroot', 'blank').focus();">
+                    <img src="/images/github-mark-white.svg" alt="Github">
+                </button>
+
+                <button type="button" onclick="window.location.href='mailto:celestemakesgames@gmail.com';">
+                    <i class="material-symbols-rounded">outgoing_mail</i>
+                </button>
+
+                <button type="button" onclick="window.location.href='tel:+31618553603';">
+                    <i class="material-symbols-rounded">call</i>
+                </button>
+
+                <button type="button" onclick="window.open('https://wa.me/qr/Q57EPA2IT5N6C1', 'blank').focus();">
+                    <img src="/images/Digital_Glyph_White.svg" alt="WhatsApp">
+                </button>
+            </div>
         </div>
 
         <div class="content">
-            <div class="home">
+            <div class="home" id="home">
                 <img src="/images/celestemountain.jpg" alt="Background image of a mountain">
                 <h1>Celeste de Groot</h1>
                 <p>I am a jack of all trades software developer</p>
             </div>
 
             <div class="projects" id="projects">
-                <button type="button" onclick="location.href='/projects/2d-platformer';">
+                <button type="button" onclick="window.open('https://github.com/celestedegroot/2D', 'blank').focus();">
                     <h2>2D Platformer</h2>
+                    <p>A 2D platformer I made in unity for the second year of my study</p>
                     <img src="/images/2d-platformer-bg.png" alt="2d-platformer preview">
                 </button>
 
-                <button type="button" onclick="location.href='/projects/sfml-pong';">
+                <button type="button" onclick="window.open('https://github.com/celestedegroot/Pong-Cpp', 'blank').focus();">
                     <h2>SFML Pong</h2>
+                    <p>Pong made with SFML in C++</p>
                     <img src="/images/sfml-pong-bg.png" alt="sfml-pong preview">
                 </button>
+
+                <button type="button" onclick="window.open('https://paleblue.celeste.games', 'blank').focus();">
+                    <h2>Paleblue Website</h2>
+                    <p>A website for the band Paleblue, a project I worked on for the first year</p>
+                    <img src="/images/paleblue-website-bg.png" alt="paleblue-website preview">
+                </button>
+
+                <button type="button" onclick="window.open('https://github.com/celestedegroot/TD-Project', 'blank').focus();">
+                    <h2>3D Tower Defense</h2>
+                    <p>Unity 3D teamwork project</p>
+                    <img src="/images/td-bg.png" alt="3d-tower-defense preview">
+                </button>
+            </div>
+
+            <div class="about" id="about">
+                <img src="/images/about-bg.jpg" alt="About me background image">
+                <div class="about-text">
+                    <h2>My name is Celeste</h2>
+                    <p>I'm 16 years old, and study software development at ROC Flevoland</p>
+                    <p>My experience is mostly in C# and C++ but I also know a other languages (JavaScript, Python, Java, etc.)</p>
+                    <p>I am a passionate software developer with a love for problem solving.</p>
+                    <p>Since an early age, I've always loved programming. Especially learning new languages and improving my skills.</p>
+                </div>
+            </div>
+
+            <div class="contact" id="contact">
+                <h1>Contact me</h1>
+                <p>If you want to get in touch with me, feel free to reach out through one of the following platforms:</p>
+                <div class="contact-links">
+                    <button onclick="window.location.href='mailto:celestemakesgames@gmail.com'">Email</button>
+                    <button onclick="window.location.href='tel:+31618553603'">Phone Number</button>
+                    <button onclick="window.open('https://wa.me/qr/Q57EPA2IT5N6C1', 'blank').focus();">Whatsapp</button>
+                </div>
             </div>
         </div>
     </div>

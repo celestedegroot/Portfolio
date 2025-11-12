@@ -29,9 +29,20 @@ html::-webkit-scrollbar {
     width: 150px;
     display: flex;
     justify-content: flex-start;
+    border-style: none dashed none none;
+    border-color: rgb(70, 25, 30);
+    border-width: 2px;
+    background-color: rgb(38, 23, 26);
     flex-direction: column;
     padding: 3px;
-    background-color: rgb(35, 35, 35);
+}
+
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
 }
 
 .content {
@@ -41,28 +52,82 @@ html::-webkit-scrollbar {
     margin-left: 150px;
 }
 
+.nav-bar img {
+    border-radius: 5px;
+    margin: 5px;
+    display: block;
+    object-fit: cover;
+}
+
 .nav-bar a {
     display: block;
     background-color: rgb(45, 60, 65);
     padding: 15px 20px;
+    border-radius: 5px;
     margin: 5px;
-    border-radius: 2px;
+    gap: 5px;
     text-decoration: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    font-size: 18px;
+    font-variant: small-caps;
+    transition: all 0.2s ease-in-out;
 }
 
 .nav-bar a:hover {
     background-color: rgb(60, 75, 80);
+    transform: scale(1.02);
+}
+
+.nav-bar-bottom {
+    margin-top: auto;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-bar-bottom button {
+    position: relative;
+    padding: 18px;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(45, 60, 65);
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-bar-bottom button img {
+    position: relative;
+    width: max-content;
+    height: 100%;
+}
+
+.nav-bar-bottom button:hover {
+    background-color: rgb(60, 75, 80);
+    transform: scale(1.05);
 }
 
 .home {
     position: relative;
-    padding: relative;
     text-align: center;
     width: 100%;
     padding: 1rem;
+    border-style: none none dotted none;
+    border-color: rgb(110, 45, 100);
+    border-width: 5px;
 }
 
 .home img {
@@ -101,18 +166,22 @@ html::-webkit-scrollbar {
     flex-wrap: wrap;
     gap: 15px;
     padding: 1rem;
+    border-style: none none dotted none;
+    border-color: rgb(110, 45, 100);
+    border-width: 5px;
 }
 
 .projects button {
     width: calc(50% - 15px);
     height: max-content;
-    border-radius: 5px;
+    border-radius: 15px;
     text-decoration: none;
     position: relative;
     border: none;
     overflow: hidden;
     cursor: pointer;
     background-color: transparent;
+    transition: all 0.2s ease-in-out;
 }
 
 .projects button img {
@@ -121,14 +190,18 @@ html::-webkit-scrollbar {
     height: 100%;
     object-fit: cover;
     filter: brightness(0.75);
-    filter: blur(2px);
-    transition: all 0.3s ease;
+    filter: blur(5px);
+    transition: all 0.2s ease-in-out;
 }
 
-.projects button img:hover {
+.projects button:hover{
+    transform: scale(1.01);
+}
+
+.projects button:hover img {
     transform: scale(1.01);
     filter: brightness(1);
-    filter: blur(1px);
+    filter: blur(0px);
 }
 
 .projects button h2 {
@@ -136,6 +209,100 @@ html::-webkit-scrollbar {
     left: 0;
     position: absolute;
     text-align: center;
+    font-size: 32px;
     width: 100%;
     top: 50%;
+    text-shadow: -2px -2px 3px black, 2px -2px 3px black, -2px 2px 3px black, 2px 2px 3px black;
+}
+
+.projects button p {
+    z-index: 1;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    font-size: 24px;
+    width: 100%;
+    top: 55%;
+    text-shadow: -2px -2px 3px black, 2px -2px 3px black, -2px 2px 3px black, 2px 2px 3px black;
+}
+
+.about {
+    position: relative;
+    width: 100%;
+    padding: 1rem;
+    border-style: none none dotted none;
+    border-color: rgb(110, 45, 100);
+    border-width: 5px;
+}
+
+.about img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    filter: blur(5px) brightness(0.3);
+}
+
+.about-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 100%;
+}
+
+.about-text h2 {
+    font-size: 36px;
+    margin-bottom: 7px;
+}
+
+.about-text p {
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.contact {
+    position: relative;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 7px;
+    text-align: center;
+}
+
+.contact p {
+    font-size: 26px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.contact-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.contact-links button {
+    padding: 1.5rem 5rem;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(45, 60, 65);
+    color: rgb(255, 255, 255);
+    transition: all 0.2s ease-in-out;
+}
+
+.contact-links button:hover {
+    background-color: rgb(60, 75, 80);
+    transform: scale(1.02);
 }
