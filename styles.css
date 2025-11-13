@@ -145,9 +145,8 @@ html::-webkit-scrollbar {
 .home h1 {
     z-index: 1;
     left: 50%;
-    top: 47%;
+    top: 48.5%;
     transform: translate(-50%, -50%);
-    width: 100%;
     position: absolute;
     font-size: 60px;
     font-weight: bold;
@@ -163,6 +162,20 @@ html::-webkit-scrollbar {
     width: 100%;
     font-size: 24px;
     color: rgb(255, 255, 255);
+    border-right: .15em solid rgb(30, 30, 30);
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(50, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 33% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(30, 30, 30); }
 }
 
 .projects {
