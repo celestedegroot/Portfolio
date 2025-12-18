@@ -30,7 +30,7 @@ html::-webkit-scrollbar {
     position: fixed;
     z-index: 1;
     height: 100%;
-    width: 150px;
+    width: 175px;
     display: flex;
     justify-content: flex-start;
     border-style: none dashed none none;
@@ -66,6 +66,7 @@ html::-webkit-scrollbar {
 .nav-bar a {
     display: block;
     background-color: rgb(45, 60, 65);
+    color: rgb(255, 255, 255);
     padding: 15px 20px;
     border-radius: 5px;
     margin: 5px;
@@ -78,8 +79,11 @@ html::-webkit-scrollbar {
     text-align: center;
     font-weight: bold;
     font-size: 18px;
-    font-variant: small-caps;
     transition: all 0.2s ease-in-out;
+}
+
+.nav-bar a i {
+    color: rgb(255, 255, 255);
 }
 
 .nav-bar a:hover {
@@ -87,8 +91,48 @@ html::-webkit-scrollbar {
     transform: scale(1.02);
 }
 
-.nav-bar-bottom {
+.nav-bar-mid {
     margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-bar-mid form {
+    width: 100%;
+    margin: 5px;
+    margin-bottom: 10px;
+}
+
+.nav-bar-mid button {
+    background-color: rgb(45, 60, 65);
+    position: relative;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 20px 10px;
+    gap: 5px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-bar-mid button i {
+    color: rgb(255, 255, 255);
+}
+
+.nav-bar-mid button:hover {
+    background-color: rgb(60, 75, 80);
+    transform: scale(1.05);
+}
+
+.nav-bar-bottom {
+    margin-top: 0;
     margin-bottom: 10px;
     display: flex;
     flex-direction: row;
@@ -100,9 +144,8 @@ html::-webkit-scrollbar {
 
 .nav-bar-bottom button {
     position: relative;
-    padding: 18px;
-    width: 60px;
-    height: 60px;
+    width: 72.5px;
+    height: 72.5px;
     background-color: rgb(45, 60, 65);
     border: none;
     border-radius: 5px;
@@ -115,8 +158,10 @@ html::-webkit-scrollbar {
 
 .nav-bar-bottom button img {
     position: relative;
-    width: max-content;
-    height: 100%;
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+    margin: 0;
 }
 
 .nav-bar-bottom button:hover {
@@ -124,9 +169,17 @@ html::-webkit-scrollbar {
     transform: scale(1.05);
 }
 
+.nav-bar-bottom button i {
+    color: rgb(255, 255, 255);
+    font-size: 36px;
+}
+
 .home {
     position: relative;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     padding: 1rem;
     border-style: none none dotted none;
@@ -144,33 +197,28 @@ html::-webkit-scrollbar {
 
 .home h1 {
     z-index: 1;
-    left: 50%;
-    top: 48.5%;
-    transform: translate(-50%, -50%);
     position: absolute;
     font-size: 60px;
     font-weight: bold;
     color: rgb(255, 255, 255);
+    margin-bottom: 7rem;
 }
 
 .home p {
     z-index: 1;
-    left: 50%;
-    top: 53%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    width: 100%;
-    font-size: 24px;
-    color: rgb(255, 255, 255);
+    overflow: hidden;
     border-right: .15em solid rgb(30, 30, 30);
     white-space: nowrap;
-    overflow: hidden;
-    animation: typing 3s steps(50, end), blink-caret .75s step-end infinite;
+    margin: 0 auto;
+    position: absolute;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    animation: typing 3s steps(44, end), blink-caret .75s step-end infinite;
 }
 
 @keyframes typing {
   from { width: 0 }
-  to { width: 33% }
+  to { width: 44ch }
 }
 
 @keyframes blink-caret {
@@ -284,7 +332,7 @@ html::-webkit-scrollbar {
 .contact {
     position: relative;
     width: 100%;
-    padding: 1rem;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -307,13 +355,13 @@ html::-webkit-scrollbar {
 .contact-links {
     display: flex;
     margin-top: 10px;
+    gap: 10px;
 }
 
 .contact-links button {
     padding: 1.5rem 5rem;
     font-size: 18px;
     border: none;
-    margin: 5px;
     border-radius: 5px;
     cursor: pointer;
     display: flex;
@@ -323,6 +371,10 @@ html::-webkit-scrollbar {
     background-color: rgb(45, 60, 65);
     color: rgb(255, 255, 255);
     transition: all 0.2s ease-in-out;
+}
+
+.contact-links button i {
+    color: rgb(255, 255, 255);
 }
 
 .contact-links button:hover {

@@ -11,18 +11,24 @@
 <body>
     <div class="page-container">
         <div class="nav-bar">
-            <img src="/images/portrait.png" alt="">
+            <img src="/images/portrait.png" draggable="false" alt="Portrait of Celeste">
 
-            <a href="/#home"><i class="material-symbols-rounded">home</i>home</a>
-            <a href="/#projects"><i class="material-symbols-rounded">folder</i>projects</a>
-            <a href="/#about"><i class="material-symbols-rounded">person</i>about me</a>
-            <a href="/#contact"><i class="material-symbols-rounded">mail</i>contact</a>
+            <a href="/#home"><i class="material-symbols-rounded">home</i>Home</a>
+            <a href="/#projects"><i class="material-symbols-rounded">folder</i>Projects</a>
+            <a href="/#about"><i class="material-symbols-rounded">person</i>About Me</a>
+            <a href="/#contact"><i class="material-symbols-rounded">mail</i>Contact</a>
+
+            <div class="nav-bar-mid">
+                <form method="get" action="/CV.pdf">
+                    <button type="submit">
+                        <i class="material-symbols-rounded">download</i>Resume
+                    </button>
+                </form>
+            </div>
 
             <div class="nav-bar-bottom">
                 <button type="button" onclick="window.open('https://github.com/celestedegroot', 'blank').focus();">
-                    
-                    <img src="/images/github-mark-white.svg" alt="Github">
-
+                    <img src="/images/github-mark-white.svg" draggable="false" alt="Github">
                 </button>
 
                 <button type="button" onclick="window.location.href='mailto:celestemakesgames@gmail.com';">
@@ -34,14 +40,14 @@
                 </button>
 
                 <button type="button" onclick="window.open('https://wa.me/qr/Q57EPA2IT5N6C1', 'blank').focus();">
-                    <img src="/images/Digital_Glyph_White.svg" alt="WhatsApp">
+                    <img src="/images/Digital_Glyph_White.svg" draggable="false" alt="WhatsApp">
                 </button>
             </div>
         </div>
 
         <div class="content">
             <div class="home" id="home">
-                <img src="/images/celestemountain.jpg" alt="Background image of a mountain">
+                <img src="/images/celestemountain.jpg" draggable="false" alt="Background image of a mountain">
                 <h1>Celeste de Groot</h1>
                 <p>I am a jack of all trades software developer</p>
             </div>
@@ -50,30 +56,30 @@
                 <button type="button" onclick="window.open('https://github.com/celestedegroot/2D', 'blank').focus();">
                     <h2>2D Platformer</h2>
                     <p>A 2D platformer I made in unity for the second year of my study</p>
-                    <img src="/images/2d-platformer-bg.png" alt="2d-platformer preview">
+                    <img src="/images/2d-platformer-bg.png" draggable="false" alt="2d-platformer preview">
                 </button>
 
                 <button type="button" onclick="window.open('https://github.com/celestedegroot/Pong-Cpp', 'blank').focus();">
                     <h2>SFML Pong</h2>
                     <p>Pong made with SFML in C++</p>
-                    <img src="/images/sfml-pong-bg.png" alt="sfml-pong preview">
+                    <img src="/images/sfml-pong-bg.png" draggable="false" alt="sfml-pong preview">
                 </button>
 
                 <button type="button" onclick="window.open('https://paleblue.celeste.games', 'blank').focus();">
                     <h2>Paleblue Website</h2>
                     <p>A website for the band Paleblue, a project I worked on for the first year</p>
-                    <img src="/images/paleblue-website-bg.png" alt="paleblue-website preview">
+                    <img src="/images/paleblue-website-bg.png" draggable="false" alt="paleblue-website preview">
                 </button>
 
                 <button type="button" onclick="window.open('https://github.com/celestedegroot/TD-Project', 'blank').focus();">
                     <h2>3D Tower Defense</h2>
                     <p>Unity 3D teamwork project</p>
-                    <img src="/images/td-bg.png" alt="3d-tower-defense preview">
+                    <img src="/images/td-bg.png" draggable="false" alt="3d-tower-defense preview">
                 </button>
             </div>
 
             <div class="about" id="about">
-                <img src="/images/about-bg.jpg" alt="About me background image">
+                <img src="/images/about-bg.jpg" draggable="false" alt="About me background image">
                 <div class="about-text">
                     <h2>My name is Celeste</h2>
                     <p>I'm 16 years old, and study software development at ROC Flevoland, very close to where I live in Almere.</p>
@@ -98,7 +104,7 @@
                     </button>
 
                     <button onclick="window.open('https://wa.me/qr/Q57EPA2IT5N6C1', 'blank').focus();">
-                        <img src="/images/Digital_Glyph_White.svg">
+                        <img src="/images/Digital_Glyph_White.svg" draggable="false" alt="WhatsApp">
                         WhatsApp
                     </button>
                 </div>
