@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: rgb(30, 30, 30);
+    background-color: rgb(36, 25, 27);
     font-family: 'JetBrains Mono', monospace;
     height: 100%;
 }
@@ -36,7 +36,7 @@ html::-webkit-scrollbar {
     border-style: none dashed none none;
     border-color: rgb(70, 25, 30);
     border-width: 2px;
-    background-color: rgb(38, 23, 26);
+    background-color: rgb(36, 25, 27);
     flex-direction: column;
     padding: 3px;
 }
@@ -53,7 +53,7 @@ html::-webkit-scrollbar {
     width: 100%;
     position: static;
     overflow: auto;
-    margin-left: 150px;
+    margin-left: 175px;
 }
 
 .nav-bar img {
@@ -183,7 +183,7 @@ html::-webkit-scrollbar {
     width: 100%;
     padding: 1rem;
     border-style: none none dotted none;
-    border-color: rgb(110, 45, 100);
+    border-color: rgb(70, 25, 30);
     border-width: 5px;
 }
 
@@ -223,7 +223,7 @@ html::-webkit-scrollbar {
 
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: rgb(30, 30, 30); }
+  50% { border-color: rgb(70, 25, 30); }
 }
 
 .projects {
@@ -233,7 +233,7 @@ html::-webkit-scrollbar {
     gap: 15px;
     padding: 1rem;
     border-style: none none dotted none;
-    border-color: rgb(110, 45, 100);
+    border-color: rgb(70, 25, 30);
     border-width: 5px;
 }
 
@@ -297,7 +297,7 @@ html::-webkit-scrollbar {
     width: 100%;
     padding: 1rem;
     border-style: none none dotted none;
-    border-color: rgb(110, 45, 100);
+    border-color: rgb(70, 25, 30);
     border-width: 5px;
 }
 
