@@ -50,7 +50,7 @@ html::-webkit-scrollbar {
 }
 
 .content {
-    width: 100%;
+    width: calc(100% - 175px);
     position: static;
     overflow: auto;
     margin-left: 175px;
